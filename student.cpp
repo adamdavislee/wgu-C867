@@ -1,8 +1,11 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "degree.h"
 #include "student.h"
 using namespace std;
+Student::Student(){}
+Student::~Student(){}
 void Student::setId(string a){
   id = a;
 }
@@ -27,21 +30,26 @@ void Student::setEmail(string a){
 string Student::getEmail(){
   return email;
 }
-void Student::setAge(string a){
+void Student::setAge(int a){
   age = a;
 }
-string Student::getAge(){
+int Student::getAge(){
   return age;
 }
-void Student::setCourseLengths(vector<string> a){
+void Student::setCourseLengths(vector<int> a){
   courseLengths = a;
 }
-vector<string> Student::getCourseLengths(){
+vector<int> Student::getCourseLengths(){
   return courseLengths;
 }
-void Student::setDegreeType(string a){
+void Student::setDegreeType(Degree a){
   degreeType = a;
 }
-string Student::getDegreeType(){
+Degree Student::getDegreeType(){
   return degreeType;
 }
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wreturn-type"
+Degree Student::getDegreeProgram(){}
+#pragma GCC diagnostic pop
+void Student::print(){}

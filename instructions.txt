@@ -1,4 +1,4 @@
-Create a program that converts the array of strings found in the studentData table to an array of student objects by doing the following:
+ Create a program that converts the array of strings found in the studentData table to an array of student objects by doing the following:
 
 
 
