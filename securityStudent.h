@@ -1,8 +1,8 @@
 #ifndef SECURITY_STUDENT_H
 #define SECURITY_STUDENT_H
 #include "student.h"
-class SecurityStudent : Student {
-  const Degree degreeProgram = SECURITY;
+class SecurityStudent : public Student {
+  Degree degreeProgram = SECURITY;
 public:
   SecurityStudent();
   ~SecurityStudent();

@@ -1,8 +1,8 @@
 #ifndef SOFTWARE_STUDENT_H
 #define SOFTWARE_STUDENT_H
 #include "student.h"
-class SoftwareStudent : Student {
-  const Degree degreeProgram = SOFTWARE;
+class SoftwareStudent : public Student {
+  Degree degreeProgram = SOFTWARE;
 public:
   SoftwareStudent();
   ~SoftwareStudent();

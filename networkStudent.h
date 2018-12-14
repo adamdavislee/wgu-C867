@@ -1,8 +1,8 @@
 #ifndef NETWORK_STUDENT_H
 #define NETWORK_STUDENT_H
 #include "student.h"
-class NetworkStudent : Student {
-  const Degree degreeProgram = NETWORKING;
+class NetworkStudent : public Student {
+  Degree degreeProgram = NETWORKING;
 public:
   NetworkStudent();
   ~NetworkStudent();

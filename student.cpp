@@ -52,4 +52,26 @@ Degree Student::getDegreeType(){
 #pragma GCC diagnostic ignored "-Wreturn-type"
 Degree Student::getDegreeProgram(){}
 #pragma GCC diagnostic pop
-void Student::print(){}
+void Student::print(){
+  // 1 [tab] First Name: John [tab] Last Name: Smith [tab] Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security
+  string daysInCourse = "{";
+  for (int i = 0; i < courseLengths.size(); ++i) {
+    daysInCourse += to_string(courseLengths[i]) + ", ";
+  }
+  string dp;
+  if (degreeType == SECURITY) {
+    dp = "Security";
+  } else if (degreeType == NETWORKING) {
+    dp = "Networking";
+  } else if (degreeType == SOFTWARE) {
+    dp = "Software";
+  }
+  daysInCourse = daysInCourse.substr(0, daysInCourse.length() - 2) + "}";
+  cout << id.substr(1) << "\t"
+       << "First Name: " << firstName << "\t"
+       << "Last Name: " << lastName << "\t"
+       << "Age: " << age << "\t"
+       << "daysInCourse: " << daysInCourse << "\t"
+       << "Degree Program: " << dp << "\t"
+       << "\n";
+}

@@ -84,6 +84,7 @@ Note: Leave the implementation of the getDegreeProgram() function empty.
 Each subclass should override the getDegreeProgram() function. Each  subclass should have a data member to hold the enumerated type for the degree program using the types defined in part C.
  
 
+
 E.  Create a Roster class (roster.cpp) by doing the following:
 
 1.  Create an array of pointers, classRosterArray, to hold the data provided in the studentData table.
