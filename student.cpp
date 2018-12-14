@@ -53,7 +53,6 @@ Degree Student::getDegreeType(){
 Degree Student::getDegreeProgram(){}
 #pragma GCC diagnostic pop
 void Student::print(){
-  // 1 [tab] First Name: John [tab] Last Name: Smith [tab] Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security
   string daysInCourse = "{";
   for (int i = 0; i < courseLengths.size(); ++i) {
     daysInCourse += to_string(courseLengths[i]) + ", ";
